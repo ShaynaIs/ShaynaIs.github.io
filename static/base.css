@@ -1,0 +1,208 @@
+
+
+.font1, h6{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    color: rgb(100, 255, 218);
+}
+
+header, .header, .font2, li, p, .contact:link, .contact:visited{
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    color: rgb(136, 146, 176);
+}
+
+.contact{
+    font-size:small;
+}
+
+.header, header{
+    color: rgb(204, 214, 246);
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+body{
+    height: 100%;
+    background-color: rgb(10,25,47);
+}
+
+.side-navbar{
+    background-color: rgb(20,35,57);
+    width: 20%;
+    min-width: 300px;
+    float: left;
+    min-width: 50px;
+    height: 100%;
+    position: fixed;
+}
+
+.navbar-icon{
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    padding:8px;
+}
+
+.navbar-icon::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90%;
+    background-color: rgb(168, 178, 209);
+    margin: 20px auto 0px auto;
+}
+
+.menu{
+    padding-left: 10px;
+    width: 80%;
+    float: right;
+}
+
+.menu-list, ul{
+    list-style: none;
+   margin-left: 0;
+   padding-left: 1em;
+   text-indent: -1em;
+   margin-bottom: 0;
+}
+
+.menu-list{
+    font-weight:bolder;
+    margin-top:16px;
+}
+
+.button:hover{
+    cursor:pointer;
+}
+
+.page{
+    width: 80%;
+    float: right;
+    height: 100%;
+}
+  #typewriter{
+      overflow:hidden;
+  }
+  #typewriter:after{
+        color: rgba(100, 255, 218,.75);
+        content: "  ";
+        border-bottom: solid 3px rgba(100, 255, 218,.75);
+        animation: animated-cursor 600ms steps(30,end) infinite;
+  }
+
+  @keyframes animated-cursor{
+    from{border-bottom-color: rgba(100, 255, 218,.75);}
+    to{border-bottom-color: transparent;}
+  }
+
+#intro, #experiences{
+    margin: 5%;
+}
+
+#experiences{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+#contact{
+    display:none;
+}
+
+.greenButton{
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    font-size: 14px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    line-height: 1;
+    cursor: pointer;
+    margin-left: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(100, 255, 218);
+    border-image: initial;
+    border-radius: 3px;
+    padding: 1.25rem 1.75rem;
+    text-decoration: none;
+    float: left;
+    box-shadow: 5px 10px 10px rgb(0,5,27);
+}
+#wait{
+    opacity:0;
+}
+.fadeIn{
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 30%;
+    min-width: 200px;
+    max-width: 300px;
+    height: 100%;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin-right: 15px;
+}
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    width: 100%;
+    height: 100%; 
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position:relative;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    box-shadow: 10px 20px 10px rgb(0,5,27);
+    border: 1px solid rgb(0,15,37);
+    padding:10px 7px;
+    padding-bottom: 35px;   
+    background-color: rgb(10,25,47); 
+    text-align: center;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgb(20,35,57);
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front>ul>li{
+      line-height:18px;
+      margin-bottom: 3px;
+  }
+
+  .flip-card-front>ul>li>span{
+      line-height: 10px;
+  }
+
+
+
+  .seeMore{
+      position: absolute;
+      bottom:0;
+      right:0;
+      margin: 0 8px 8px 0;
+      width: 100%;
+      text-align: right;
+  }
