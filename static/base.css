@@ -226,6 +226,11 @@ body{
         height: 100%;
         margin-right: 15px;
     }
+    
+    .flip-card-front>ul>li{
+      line-height:18px;
+      margin-bottom: 3px;
+  }
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -272,10 +277,7 @@ body{
     transform: rotateY(180deg);
   }
 
-  .flip-card-front>ul>li{
-      line-height:18px;
-      margin-bottom: 3px;
-  }
+  
 
   .flip-card-front>ul>li>span{
       line-height: 10px;
