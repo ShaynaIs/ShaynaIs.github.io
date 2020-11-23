@@ -102,6 +102,9 @@
     setTimeout(function(){
         document.getElementById('wait').classList.add('fadeIn'); 
     }, 6000);
+    setTimeout(function(){
+        document.getElementById('wait_phone').classList.add('fadeInPhone'); 
+    }, 6000);
 
 function autoSize(){
     // Get flip card heights
