@@ -1,5 +1,8 @@
 
 @media (max-width:1025px){
+    *{
+        font-size:2rem;    
+    }
     .hello{
         font-size: 5vw;
     }
