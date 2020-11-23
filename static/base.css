@@ -114,7 +114,7 @@ body{
     border-color: rgb(100, 255, 218);
     border-image: initial;
     border-radius: 3px;
-    padding: 1.25rem 1.75rem;
+    padding: 1.75rem 2.25rem;
     text-decoration: none;
     /*float: left;*/
     box-shadow: 5px 10px 10px rgb(0,5,27);
@@ -145,6 +145,9 @@ body{
 @media (min-width:1025px){
     .name, .greeting{
         font-size:68px;   
+    }
+    #bio{
+        max-width: 600px;
     }
     .phone{
         display:none;
@@ -228,9 +231,8 @@ body{
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    width: 95%;
-    max-width:300px;
-    height: 300px;
+    width: 90vw;
+    height: 90vh;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
   
