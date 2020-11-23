@@ -1,5 +1,14 @@
 
 @media (max-width:1025px){
+    .hello{
+        font-size: 5vw;
+    }
+    .name{
+        font-size: 14vw;
+    }
+    .greeting{
+        font-size: 9vw;
+    }
     .side-navbar{
         display:none;
     }
@@ -131,6 +140,9 @@ body{
 }
 
 @media (min-width:1025px){
+    .name, .greeting{
+        font-size:68px;   
+    }
     .phone{
         display:none;
     }
