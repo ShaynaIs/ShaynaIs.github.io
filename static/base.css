@@ -1,4 +1,17 @@
 
+@media (max-width:1025px){
+    .side-navbar{
+        display:none;
+    }
+    #wait_phone{
+        opacity:0;
+    }
+    .fadeInPhone{
+        animation-name: fadeIn;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+}
 
 .font1, h6{
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
@@ -10,15 +23,9 @@ header, .header, .font2, li, p, .contact:link, .contact:visited{
     color: rgb(136, 146, 176);
 }
 
-.contact{
-    font-size:small;
-}
-
 .header, header{
     color: rgb(204, 214, 246);
     font-weight: bold;
-    font-size: 20px;
-    margin-top: 10px;
 }
 
 body{
@@ -26,88 +33,28 @@ body{
     background-color: rgb(10,25,47);
 }
 
-.side-navbar{
-    background-color: rgb(20,35,57);
-    width: 20%;
-    min-width: 300px;
-    float: left;
-    min-width: 50px;
-    height: 100%;
-    position: fixed;
+#typewriter{
+    overflow:hidden;
+}
+#typewriter:after{
+    color: rgba(100, 255, 218,.75);
+    content: "  ";
+    border-bottom: solid 3px rgba(100, 255, 218,.75);
+    animation: animated-cursor 600ms steps(30,end) infinite;
 }
 
-.navbar-icon{
-    position: absolute;
-    width: 50px;
-    height: 100%;
-    padding:8px;
-}
-
-.navbar-icon::after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 90%;
-    background-color: rgb(168, 178, 209);
-    margin: 20px auto 0px auto;
-}
-
-.menu{
-    padding-left: 10px;
-    width: 80%;
-    float: right;
-}
-
-.menu-list, ul{
-    list-style: none;
-   margin-left: 0;
-   padding-left: 1em;
-   text-indent: -1em;
-   margin-bottom: 0;
-}
-
-.menu-list{
-    font-weight:bolder;
-    margin-top:16px;
-}
-
-.button:hover{
-    cursor:pointer;
-}
-
-.page{
-    width: 80%;
-    float: right;
-    height: 100%;
-}
-  #typewriter{
-      overflow:hidden;
-  }
-  #typewriter:after{
-        color: rgba(100, 255, 218,.75);
-        content: "  ";
-        border-bottom: solid 3px rgba(100, 255, 218,.75);
-        animation: animated-cursor 600ms steps(30,end) infinite;
-  }
-
-  @keyframes animated-cursor{
+@keyframes animated-cursor{
     from{border-bottom-color: rgba(100, 255, 218,.75);}
     to{border-bottom-color: transparent;}
-  }
+}
 
 #intro, #experiences{
     margin: 5%;
 }
 
 #experiences{
-    display: none;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    height: 300px;
-}
-
-#contact{
-    display:none;
 }
 
 .greenButton{
@@ -128,6 +75,7 @@ body{
     float: left;
     box-shadow: 5px 10px 10px rgb(0,5,27);
 }
+
 #wait{
     opacity:0;
 }
@@ -141,15 +89,96 @@ body{
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
+
+.menu-list, ul{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+    margin-bottom: 0;
+}
+
+@media (min-width:1025px){
+    .contact{
+        font-size:65%;
+    }
+
+    .header, header{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .side-navbar{
+        background-color: rgb(20,35,57);
+        width: 20%;
+        min-width: 300px;
+        float: left;
+        min-width: 50px;
+        height: 100%;
+        position: fixed;
+    }
+
+    .navbar-icon{
+        position: absolute;
+        width: 50px;
+        height: 100%;
+        padding:8px;
+    }
+
+    .navbar-icon::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90%;
+        background-color: rgb(168, 178, 209);
+        margin: 20px auto 0px auto;
+    }
+
+    .menu{
+        padding-left: 10px;
+        width: 80%;
+        float: right;
+    }
+
+    .menu-list{
+        font-weight:bolder;
+        margin-top:16px;
+    }
+
+    .button:hover{
+        cursor:pointer;
+    }
+
+    .page{
+        width: 80%;
+        float: right;
+        height: 100%;
+    }
+
+    #experiences{
+        display: none;
+        flex-direction: row;
+        height: 300px;
+    }
+
+    #contact{
+        display:none;
+    }
+
+    .flip-card {
+        width: 30%;
+        min-width: 200px;
+        max-width: 300px;
+        height: 100%;
+        margin-right: 15px;
+    }
+}
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    width: 30%;
-    min-width: 200px;
-    max-width: 300px;
-    height: 100%;
+    width: 95%;
+    max-width:300px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    margin-right: 15px;
 }
   
   /* This container is needed to position the front and back side */
