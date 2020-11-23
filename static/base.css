@@ -11,6 +11,11 @@
         animation-duration: 3s;
         animation-fill-mode: forwards;
     }
+           
+    @keyframes fadeIn{
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
     #experiences{
         padding-left:15%;
         padding-right:15%;
