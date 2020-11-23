@@ -11,6 +11,21 @@
         animation-duration: 3s;
         animation-fill-mode: forwards;
     }
+    #experiences{
+        padding-left:15%;
+        padding-right:15%;
+    }
+    #bullets{
+        background-color: rgb(20,35,57);
+        margin-top:45px;
+        margin-bottom:45px;
+    }
+    .first{
+        padding-top:20px;
+    }
+    #bio{
+        padding-bottom:5%;
+    }
 }
 
 .font1, h6{
@@ -48,13 +63,25 @@ body{
     to{border-bottom-color: transparent;}
 }
 
-#intro, #experiences{
-    margin: 5%;
-}
-
 #experiences{
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+#contact{
+    margin:5%;
+}
+
+#intro{
+    padding-top:5%;
+}
+#typewriter, #bio, #bullets{
+    padding-left:5%;
+    padding-right:5%;
+}
+
+#bullets{
+    padding-bottom:5%;
 }
 
 .greenButton{
@@ -64,7 +91,7 @@ body{
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
     line-height: 1;
     cursor: pointer;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
     border-width: 1px;
     border-style: solid;
     border-color: rgb(100, 255, 218);
@@ -72,7 +99,7 @@ body{
     border-radius: 3px;
     padding: 1.25rem 1.75rem;
     text-decoration: none;
-    float: left;
+    /*float: left;*/
     box-shadow: 5px 10px 10px rgb(0,5,27);
 }
 
@@ -99,6 +126,9 @@ body{
 }
 
 @media (min-width:1025px){
+    .phone{
+        display:none;
+    }
     .contact{
         font-size:65%;
     }
@@ -159,6 +189,7 @@ body{
         display: none;
         flex-direction: row;
         height: 300px;
+        margin: 5%;
     }
 
     #contact{
@@ -173,11 +204,13 @@ body{
         margin-right: 15px;
     }
 }
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
     width: 95%;
     max-width:300px;
+    height: 300px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
   
