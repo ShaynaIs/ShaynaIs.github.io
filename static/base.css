@@ -1,6 +1,6 @@
 
 @media (max-width:1025px){
-    #bio, #contact, #bullets, #experiences, .font1, .font2{
+    #bio, #contact, #bullets, #experiences, .font1, .font2, h6{
         font-size:1.6rem;    
     }
     .hello{
@@ -238,7 +238,7 @@ body{
     background-color: transparent;
     width: 100%;
     min-height: 225px;
-    max-height: 260px;
+    max-height: 300px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
   
