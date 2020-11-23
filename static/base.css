@@ -1,6 +1,6 @@
 
 @media (max-width:1025px){
-    *{
+    #bio, #contact, #bullets, #experiences{
         font-size:2rem;    
     }
     .hello{
