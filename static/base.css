@@ -1,6 +1,6 @@
 
 @media (max-width:1025px){
-    body{
+    body, #bio{
         font-align: center !important;
     }
     #bio, #contact, #bullets, #experiences, .font1, .font2, h6{
@@ -45,6 +45,9 @@
     }
     #bio{
         padding-bottom:5%;
+    }
+    .greenButton>a:link{
+        color: rgb(100, 255, 218);
     }
 }
 
