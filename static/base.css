@@ -1,6 +1,6 @@
 
 @media (max-width:1025px){
-    *{
+    body{
         font-align: center;
     }
     #bio, #contact, #bullets, #experiences, .font1, .font2, h6{
@@ -240,8 +240,7 @@ body{
 .flip-card {
     background-color: transparent;
     width: 100%;
-    min-height: 225px;
-    max-height: 300px;
+    min-height: 360px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
   
