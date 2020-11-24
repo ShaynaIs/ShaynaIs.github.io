@@ -1,7 +1,7 @@
 
 @media (max-width:1025px){
-    body, #bio{
-        font-align: center !important;
+    body {
+        text-align: center !important;
     }
     #bio, #contact, #bullets, #experiences, .font1, .font2, h6{
         font-size:1.6rem;    
